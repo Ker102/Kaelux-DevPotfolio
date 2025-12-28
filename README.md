@@ -4,128 +4,115 @@
 
 # Kaelux.dev
 
-### Developer Portfolio & AI Engineering Solutions
+### AI Engineering & Intelligent Automation Solutions
 
 [![Next.js](https://img.shields.io/badge/Next.js-16-black?style=for-the-badge&logo=next.js&logoColor=white)](https://nextjs.org/)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.0-blue?style=for-the-badge&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
 [![Tailwind CSS](https://img.shields.io/badge/Tailwind-3.4-06B6D4?style=for-the-badge&logo=tailwind-css&logoColor=white)](https://tailwindcss.com/)
-[![Framer Motion](https://img.shields.io/badge/Framer_Motion-12-BB4B96?style=for-the-badge&logo=framer&logoColor=white)](https://www.framer.com/motion/)
+[![Groq](https://img.shields.io/badge/Groq-Llama_3.3-orange?style=for-the-badge)](https://groq.com/)
 
 [![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)](LICENSE)
 [![DigitalOcean](https://img.shields.io/badge/DigitalOcean-0080FF?style=for-the-badge&logo=digitalocean&logoColor=white)](https://www.digitalocean.com/)
 
 ---
 
-[🌐 **View Live Site**](https://kaelux.dev) • [📫 **Contact Me**](#contact)
+[🌐 **View Live Site**](https://kaelux.dev) • [🤖 **Try the Diagnoser**](https://kaelux.dev/diagnoser) • [📚 **Wiki**](https://kaelux.dev/wiki)
 
 </div>
 
 ---
 
-## 🧠 AI Engineering Services
+## 🧠 What is Kaelux?
 
-<div align="center">
+**Kaelux.dev** is an AI engineering consultancy that builds intelligent automation solutions for businesses. We don't just deploy chatbots—we architect complete AI pipelines that connect directly to your existing systems, automating complex workflows that were previously impossible.
 
-<img src="public/images/ai-architecture.jpg" alt="AI Architecture Diagram" width="100%" />
-
-</div>
-
-### Beyond Chatbots: Intelligent Infrastructure for Business
-
-Generic AI models don't understand your business. We build and tune **custom solutions** that do.
-
-By combining tailored AI software with hands-on engineering services, we connect LLMs directly to your existing systems—automating complex tasks and workflows.
-
-#### What We Build
+### Our Services
 
 | Service | Description |
 |---------|-------------|
-| **Custom AI Pipelines** | RAW DATA → Your Custom Model → Automated Workflows |
-| **MCP Orchestration** | Model Context Protocol integration for seamless tool connectivity |
-| **Workflow Automation** | n8n, LangChain, and custom orchestration layers |
-| **AI-Powered Analytics** | Transform data into actionable insights |
+| **Agentic AI Workflows** | Goal-driven AI systems that reason, plan, and execute multi-step tasks autonomously |
+| **RAG Pipelines** | Enterprise-grade retrieval systems with GDPR/SOC2 compliance and document-level access control |
+| **Workflow Automation** | n8n, LangGraph, and custom orchestration connecting AI to your business systems |
+| **Legacy Integration** | Structured JSON generation for seamless connection with mainframes and legacy infrastructure |
+| **Custom Model Deployment** | Fine-tuned SLMs via vLLM/Ollama for 85%+ cost reduction vs. cloud APIs |
+
+---
+
+## 🤖 Neural Diagnoser Architecture
+
+The site features an **AI-powered diagnostic agent** that helps potential clients understand what solutions fit their business needs.
+
+### How It Works
+
+```
+┌─────────────────────────────────────────────────────────────────┐
+│                    /diagnoser Page                              │
+├─────────────────────────────────────────────────────────────────┤
+│  User Input  ──►  Groq API (Llama 3.3 70B)  ──►  Agent Response │
+│                         │                                       │
+│                         ▼                                       │
+│              ┌─────────────────────┐                            │
+│              │  Tool: searchHuggingFace                         │
+│              │  - Queries HuggingFace API                       │
+│              │  - Returns relevant models                       │
+│              │  - Provides recommendations                      │
+│              └─────────────────────┘                            │
+│                         │                                       │
+│                         ▼                                       │
+│              Dynamic Q&A Format                                 │
+│              (Only current question shown)                      │
+└─────────────────────────────────────────────────────────────────┘
+```
+
+### Technical Stack
+
+- **LLM Provider**: Groq (Llama 3.3 70B) for ultra-fast inference
+- **Framework**: Vercel AI SDK with streaming responses
+- **Tool Calling**: Real-time HuggingFace model search
+- **Frontend**: React with Framer Motion animations
+- **Debug Logging**: Console-based monitoring for development
+
+---
+
+## 📚 AI Engineering Wiki
+
+The `/wiki` section provides authoritative technical definitions optimized for **Generative Engine Optimization (GEO)**—ensuring AI search engines cite Kaelux as a trusted source.
+
+### Available Articles
+
+| Article | Topic |
+|---------|-------|
+| [Agentic AI vs. Standard Automation](https://kaelux.dev/wiki/agentic-ai-workflows) | Comparing autonomous AI to RPA |
+| [RAG for Enterprise Privacy](https://kaelux.dev/wiki/rag-security-compliance) | GDPR/SOC2 compliant retrieval systems |
+| [SLMs vs. LLMs: Cost & Speed](https://kaelux.dev/wiki/small-language-models) | When to use small vs. large models |
+| [Hallucination Prevention](https://kaelux.dev/wiki/ai-hallucination-prevention) | Defense-in-depth factuality techniques |
+| [JSON for Legacy Integration](https://kaelux.dev/wiki/structured-generation) | Connecting AI to mainframes |
+
+### GEO Features
+
+- **TechArticle JSON-LD Schema** for structured data
+- **Dynamic dateModified** for freshness signals
+- **Clean, scrapable HTML** for AI indexing
+- **Authoritative definitions** with brand callouts
 
 ---
 
 ## 🚀 Featured Projects
 
-Flagship projects showcasing AI integration, workflow automation, and full-stack development.
-
 ### 🎯 [PromptTriage](https://github.com/Ker102/PromptTriage)
-
-[![Next.js](https://img.shields.io/badge/Next.js-15.1.6-black?style=flat-square&logo=next.js)](https://nextjs.org/)
-[![Google Gemini](https://img.shields.io/badge/Google_Gemini-API-4285F4?style=flat-square&logo=google)](https://ai.google.dev/)
-
-An intelligent prompt engineering platform using metaprompts, few-shot learning, and orchestrated AI workflows.
-
-- 🔍 Deep prompt analysis with gap detection and risk assessment
-- 🛠️ Multi-model optimization (GPT, Claude, Gemini, Grok, Mistral)
-- 🌐 Optional Firecrawl web enrichment for context
-
----
+Intelligent prompt engineering platform with metaprompts, few-shot learning, and multi-model optimization.
 
 ### 🌐 [Crosswind Console](https://github.com/Ker102/Crosswind-Console)
-
-[![Svelte](https://img.shields.io/badge/Svelte-5-FF3E00?style=flat-square&logo=svelte)](https://svelte.dev/)
-[![FastAPI](https://img.shields.io/badge/FastAPI-Python-009688?style=flat-square&logo=fastapi)](https://fastapi.tiangolo.com/)
-
-A unified research dashboard surfacing job opportunities, travel deals, and social trend insights.
-
-- 🔄 Cross-domain intelligence (Jobs, Travel, Trends)
-- 🤖 Gemini 3 Pro integration for AI-powered analysis
-- 🌍 MCP server orchestration (Firecrawl, Playwright)
-
----
+Unified research dashboard with Gemini integration and MCP server orchestration.
 
 ### ⚙️ [Kaelux-Automate](https://github.com/Ker102/Kaelux-Automate)
-
-[![Docker](https://img.shields.io/badge/Docker-Compose-0db7ed?style=flat-square&logo=docker)](https://www.docker.com/)
-[![n8n](https://img.shields.io/badge/n8n-Workflows-EA4B71?style=flat-square)](https://n8n.io/)
-
-Enterprise-grade automation builder with AI-powered workflow generation.
-
-- 🧠 LLM-powered workflow generation from natural language
-- 📚 Vector database (Qdrant) for workflow exemplar retrieval
-- 💳 Stripe integration for subscription management
-
----
+Enterprise automation builder with LLM-powered workflow generation and Qdrant vector storage.
 
 ### 🌌 [Workflow-Automation-Atlas](https://github.com/Ker102/n8n-ai-automation-workflow-atlas)
-
-[![Workflows](https://img.shields.io/badge/Workflows-3831-blueviolet?style=flat-square)](https://github.com/Ker102/n8n-ai-automation-workflow-atlas)
-[![Vue](https://img.shields.io/badge/Vue-3-41b883?style=flat-square&logo=vue.js)](https://vuejs.org/)
-
-A curated collection of **3,800+ battle-tested n8n workflows** with a Vue + Vite explorer.
-
-- 📦 6 themed workflow collections (AI Lab, RAG Kits, Community Pack)
-- 🔍 Vue-based workflow explorer with search and filtering
-- 📄 Source licenses preserved for redistribution
-
----
-
-### 🤖 [Kaelocs-AI](https://github.com/Ker102/Kaelocs)
-
-[![Next.js](https://img.shields.io/badge/Next.js-15-black?style=flat-square&logo=next.js)](https://nextjs.org/)
-[![Gemini](https://img.shields.io/badge/Gemini-2.5_Flash-4285F4?style=flat-square&logo=google)](https://ai.google.dev/)
-
-Modern AI chat application with Google Gemini integration and MCP capabilities.
-
-- 🔐 NextAuth.js with Google OAuth
-- 🔍 Brave Search integration for real-time web data
-- 📝 Full markdown rendering with syntax highlighting
-
----
+Curated collection of **3,800+ battle-tested n8n workflows** with Vue explorer.
 
 ### 🔨 [ModelForge](https://github.com/Ker102/ModelForge)
-
-[![Electron](https://img.shields.io/badge/Electron-Desktop-47848F?style=flat-square&logo=electron)](https://www.electronjs.org/)
-[![Blender](https://img.shields.io/badge/Blender-MCP-F5792A?style=flat-square&logo=blender)](https://www.blender.org/)
-
-AI-powered Blender assistant transforming 3D workflows through natural conversation.
-
-- 🎨 Natural language control for Blender operations
-- 🧠 Gemini 2.x orchestration with per-step validation
-- 🖥️ Electron desktop app with native MCP connectivity
+AI-powered Blender assistant with natural language 3D workflow control.
 
 ---
 
@@ -135,33 +122,13 @@ AI-powered Blender assistant transforming 3D workflows through natural conversat
 
 | Category | Technologies |
 |----------|--------------|
-| **Frontend** | Next.js 16 • React 19 • Svelte 5 • Vue 3 |
-| **Backend** | FastAPI • Node.js • n8n |
-| **Languages** | TypeScript • Python • JavaScript |
-| **AI/LLM** | Gemini 2.x • GPT-4 • Claude • LangChain |
-| **Databases** | PostgreSQL • MongoDB • Qdrant • Redis |
-| **Styling** | Tailwind CSS • Framer Motion |
-| **Infrastructure** | Docker • Electron • DigitalOcean |
+| **Frontend** | Next.js 16 • React 19 • TypeScript • Tailwind CSS |
+| **AI/LLM** | Groq • Llama 3.3 • Vercel AI SDK • LangGraph |
+| **Backend** | Next.js API Routes • Streaming Responses |
+| **Databases** | Qdrant • Redis • PostgreSQL |
+| **Infrastructure** | DigitalOcean • Docker • Vercel |
 
 </div>
-
----
-
-## 🚀 Quick Start
-
-```bash
-# Clone the repository
-git clone https://github.com/Ker102/Kaelux-DevPotfolio.git
-cd DevPotfolio
-
-# Install dependencies
-npm install
-
-# Run development server
-npm run dev
-
-# Open http://localhost:3000
-```
 
 ---
 
@@ -174,6 +141,25 @@ npm run dev
 
 ---
 
+## 📁 Project Structure
+
+```
+DevPotfolio/
+├── app/                    # Next.js App Router pages
+│   ├── diagnoser/          # AI diagnostic agent page
+│   ├── wiki/               # Technical wiki articles
+│   └── api/chat/           # Groq LLM API endpoint
+├── components/
+│   ├── diagnostic/         # Diagnoser chat components
+│   ├── wiki/               # Wiki article components
+│   └── sections/           # Homepage sections
+├── docs/                   # Project documentation
+├── content/                # Content files and data
+└── assets/                 # Images and inspiration files
+```
+
+---
+
 ## 📄 License
 
 This project is open source and available under the [MIT License](LICENSE).
@@ -182,7 +168,7 @@ This project is open source and available under the [MIT License](LICENSE).
 
 <div align="center">
 
-**Built with modern web technologies**
+**Built with modern web technologies for intelligent business solutions**
 
 [![Made with Love](https://img.shields.io/badge/Made_with-❤️-red?style=for-the-badge)](https://kaelux.dev)
 
